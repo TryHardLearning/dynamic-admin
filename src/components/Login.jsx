@@ -35,7 +35,7 @@ const Login = () => {
                     <p className='text-sm font-medium text-gray-700 mb-2'>Password</p>
                     <input onChange={(e)=> setPassword(e.target.value)} value={password} type='text' className='rounded-md w-full px-3 py-2 border border-gray-300 outline-none' placeholder='Enter your password' />
                 </div>
-                <button type='submit' className='mt-2 w-full py-2 px-4 rounded-md text-white bg-black mt-8'>Login</button>
+                <button type='submit' className='w-full py-2 px-4 rounded-md text-white bg-black mt-8'>Login</button>
             </form>
         </div>
     </div>
