@@ -16,9 +16,17 @@ export const AuthContextProvider = ({ children }) => {
         }
     }, [token]);
 
-     const value = {
+    const logout = () => {
+        localStorage.removeItem('token');
+        delete axios.defaults.headers.common['Authorization'];
+        setToken(null);
+        console.log('Logged out');
+    }
+
+    const value = {
         token,
         setToken,
+        logout
     }
 
     return (
